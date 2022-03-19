@@ -1,0 +1,54 @@
+#menubar {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 52, 102, 1);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+    font-family:"NotoSansKR";
+}
+
+#menubar  i {
+    font-size: 20px;
+}
+
+#menubar .ani:hover {
+    animation-name: fadein;
+    animation-duration: 0.4s;
+}
+
+#menubar .ani:active {
+    font-size: large;
+}
+
+.menubar__content {
+    display: flex;
+    align-items: center;
+}
+
+.menubar__content div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menubar__tool {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.menubar__tool  div {
+    padding-left: 20px;
+}
+
+/* animations */
+
+@keyframes fadein {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
