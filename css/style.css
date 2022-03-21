@@ -9,6 +9,7 @@
 /* body --> */
 
 @import url("header.css"); /* header */
-@import url("section.css"); /* main */
+@import url("main.css"); /* main */
+@import url("section.css"); /* section */
 
 /* <-- body */

@@ -1,5 +1,122 @@
-section {
+section {    
+    background-color: #fafafa;
+}
+
+.section__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 75%;
+    max-width: 1080px;
+    height: 800px;
+    margin: auto;
+}
+
+.section__content--row {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 400px;
-    background-color: RGB(0, 52, 102);
+}
+
+.section__content--row-title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    color: rgb(65, 65, 65);
+}
+
+.section__content--row-listbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section__content a {
+    width: 33%;
+    background-color: white;
+    color: #000000de;
+    display: flex;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 3px;
+    background-color: #fafafa;
+}
+
+.section__content a:hover .section__content--row--list {
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+
+.section__content--row--list {
+    width: 100%;
+    min-height: 140px;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+}
+
+.list-title {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.list-divider {
+    width: 30%;
+    height: 5px;
+    margin: 15px auto;
+    background: #ff4081;
+}
+
+.list-content {
+    word-break: keep-all;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.logo-title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.list-logo {
+    font-size: 30px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.list-logo i {    
+    margin-top: 5px;
+}
+
+.kakao-box {    
+    background-color: rgb(250, 227, 1);
+}
+
+.kakao {
+    color: #391b1b;
+}
+
+.mail-box {
+    background-color: #00c13a;
+}
+
+.mail {
+    color: #ffffff;
 }
