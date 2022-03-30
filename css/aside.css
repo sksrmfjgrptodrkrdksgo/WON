@@ -1,0 +1,24 @@
+aside {
+    height: 100px;
+    background-color: #fafafa;
+}
+
+.aside__menubar {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    position: sticky;
+    float: right;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.aside__menubar a {
+    margin-left: 5px;
+}
+
+.aside__menubar i {
+   color: rgb(0, 52, 102);
+}

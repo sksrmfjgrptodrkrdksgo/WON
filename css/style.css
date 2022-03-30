@@ -11,5 +11,8 @@
 @import url("header.css"); /* header */
 @import url("main.css"); /* main */
 @import url("section.css"); /* section */
+@import url("footer.css"); /* footer */
+@import url("aside.css"); /* aside */
+@import url("section-tip.css");
 
 /* <-- body */

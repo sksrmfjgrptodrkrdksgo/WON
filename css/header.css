@@ -1,7 +1,7 @@
-#menubar {
+.menubar {
     width: 100%;
     height: 60px;
-    background-color: rgba(0, 52, 102, 1);
+    background-color: rgb(161, 21, 48);
     position: fixed;
     top: 0;
     display: flex;
@@ -13,21 +13,17 @@
     z-index: 100;
 }
 
-#menubar a {    
+.menubar a {    
 	color: white;
 }
 
-#menubar  i {
+.menubar  i {
     font-size: 20px;
 }
 
-#menubar .ani:hover {
+.menubar .ani:hover {
     animation-name: fadein;
     animation-duration: 0.4s;
-}
-
-#menubar .ani:active {
-    font-size: large;
 }
 
 .menubar__content {
@@ -40,15 +36,20 @@
     padding-right: 20px;
 }
 
-.menubar__tool {
+.menubar__weather {
     display: flex;
     align-items: center;
     padding-right: 20px;
 }
 
-.menubar__tool  div {
-    padding-left: 30px;
+.menubar__weather div {
+    margin-right: 10px;
 }
+
+.menubar__weather div:first-child {
+    margin-right: 20px;
+}
+
 
 /* animations */
 

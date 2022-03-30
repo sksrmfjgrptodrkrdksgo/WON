@@ -79,7 +79,7 @@ section {
     width: 30%;
     height: 5px;
     margin: 15px auto;
-    background: #ff4081;
+    background: rgb(196, 25, 59);
 }
 
 .list-content {
@@ -90,7 +90,8 @@ section {
 
 .logo-title {
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .list-logo {
