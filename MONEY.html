@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/new-style.css">
+    <title>WON</title>
+</head>
+<body>
+    <header id="menubar">
+        <div class="menubar__content">
+            <div class="menubar__content--logo">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <div class="menubar__content--list1 ani"><a href="index.html">학점계산기</a></div>
+            <div class="menubar__content--list2 ani"><a href="#">비교과</a></div>
+            <div class="menubar__content--list3 ani"><a href="#">SEN-TEST</a></div>
+            <div class="menubar__content--list4 ani"><a href="#">자가진단</a></div>
+            <div class="menubar__content--list5 ani"><a href="tip.html">학교생활팁</a></div>
+            <div class="menubar__content--list6 ani"><a href="#">학사공지</a></div>
+        </div>
+
+        <!--Weather-->
+        <div class="menubar__weather">
+            <div class="menubar__weather--loacation">학교 날씨 :</div>
+            <div class="menubar__weather--icon"></div>
+            <div class="menubar__weather--temp"></div>
+        </div>
+    </header>
+    <main>
+        <div class="main__section">
+            <h1 class="main__section--main-title">장학금</h1>
+            <h2 class="main__section--sub-title">장학금</h2>
+        </div>                
+    </main>
+    <!--Section-->
+    <section>
+        <div class="section__content">
+            <div class="section__content--row">
+                <div class="section__content--row-title">바로가기</div>
+                <div class="section__content--row-listbox">
+
+                    <a href="PLACE.html">
+                        <div class="section__content--row--list">
+                            <p class="list-title">주요 시설 위치</p>
+                            <div class="list-divider"></div>
+                            <p class="list-content">
+                                ①헬스장<br>②식물원<br>③박물관
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="BUS.html">
+                        <div class="section__content--row--list">
+                            <p class="list-title">버스 시간표</p>
+                            <div class="list-divider"></div>
+                            <p class="list-content">
+                                ①괴산시외버스 시간표<br>②학교 버스 시간표 
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="MONEY.html">
+                        <div class="section__content--row--list">
+                            <p class="list-title" style="font-family: Roboto;">장학금</p>
+                            <div class="list-divider"></div>
+                            <p class="list-content">
+                                ①교내 장학금<br>②국가 장학금 신청
+                            </p>
+                        </div>
+                    </a>                  
+
+                </div>
+            </div>            
+        </div>
+    </section>
+    <section>
+        <div class="section__content">
+            <div class="section__content--row">
+                <div class="section__content--row-title">교내 장학금📌</div>
+                    <div class="centered">
+                    <embed src = "money.pdf" type = "application/pdf" width =950px height="1000px"/>
+                    </div>
+            </div>
+        </div>
+        <div class="section__content">
+            <div class="section__content--row">                
+                <div class="section__content--row-title"><a target="_blank" href="https://www.kosaf.go.kr/ko/main.do">국가장학금 신청📌</a></div>
+            </div>
+        </div>
+    </section>
+            
+    <!-- Footer -->
+    <footer>
+        <div class="footer__title">Copyright © 2022 WON</div>
+        <a href="https://haksa.jwu.ac.kr/com/index.html">
+            <img class="footer__logo--image"src="/assets/image/jwu_logo1.png" alt="">
+        </a>        
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>    
+    <script>
+        $(document).ready(function () {
+            let weathersIcon = {
+                '01': 'fas fa-sun',
+                '02': 'fas fa-cloud-sun',
+                '03': 'fas fa-cloud',
+                '04': 'fas fa-cloud-meatball',
+                '09': 'fas fa-cloud-showers-heavy',
+                '10': 'fas fa-cloud-rain',
+                '11': 'fas fa-poo-storm',
+                '13': 'fas fa-snowflake',
+                '50': 'fas fa-smog'
+            }
+
+            $.getJSON(
+                'https://api.openweathermap.org/data/2.5/weather?lat=36.8187&lon=127.7996&appid=54d8b56b9ce4d6cafa110738a09ec718&units=metric',
+                function (data) {
+
+                    var weatherTemp = Math.floor(data.main.temp) + ' º ';
+                    var weatherIcon = (data.weather[0].icon).substr(0,2);
+                    var weatherCity = data.name;
+
+                    $('.menubar__weather--temp').append(weatherTemp);
+                    $('.menubar__weather--icon').append('<i class="' + weathersIcon[weatherIcon] + '"></i>');
+                    // $('.menubar__weather--city').append(weatherCity); /* 학교 날씨 */
+                }
+            )
+        })
+    </script>
+</body>
+</html>
