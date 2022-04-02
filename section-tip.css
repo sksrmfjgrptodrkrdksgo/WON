@@ -1,0 +1,250 @@
+section {    
+    background-color: #fafafa;
+}
+
+.section__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 75%;
+    max-width: 1080px;
+    /*섹션 간격*/
+    height: 23%;
+    margin: auto;
+}
+
+.section__content--row {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.section__content--row-title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-family: "NotoSansKR";
+    font-weight: 400;
+    color: rgb(65, 65, 65);
+}
+/*서브타이틀*/
+.section--sub-title {
+  font-size: 18px;    
+  margin: 15px 5px;
+
+}
+
+ .section__content--row-listbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section__content a {
+    width: 33%;
+    background-color: white;
+    color: #000000de;
+    display: flex;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 3px;
+    background-color: #fafafa;
+}
+
+.section__content a:hover .section__content--row--list {
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+
+.section__content--row--list {
+    width: 100%;
+    min-height: 140px;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+}
+
+.list-title {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.list-divider {
+    width: 30%;
+    height: 5px;
+    margin: 15px auto;
+    background:#a11530;
+}
+/*글자 간격 수정*/
+.list-content {
+    word-break: keep-all;
+    margin-top: 10px;
+    font-size: 16px;
+    /*수정*/
+    line-height: 1.3em;
+    
+}
+
+.logo-title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.list-logo {
+    font-size: 30px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.list-logo i {    
+    margin-top: 5px;
+}
+
+.kakao-box {    
+    background-color: rgb(250, 227, 1);
+}
+
+.kakao {
+    color: #391b1b;
+}
+
+.mail-box {
+    background-color: #00c13a;
+}
+
+.mail {
+    color: #ffffff;
+}
+/*PDF 중앙 배열*/
+.centered{display: table; margin-left:auto; margin-right:auto;}
+
+
+
+/*본문 수정*/
+
+
+#wrapper {
+  width:100%;
+  height:600px;
+  background:#aed6e4;
+  /*추가*/
+  margin: 0 auto;
+  border: 1px solid red;
+  overflow: hidden;
+}
+/*설명글*/
+p {
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+.a {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+#frame {
+  width:flex;
+  height:flex;  
+  box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+  position:relative;
+  top:50px;
+  left:50px;
+  bottom: 50px;
+}
+
+.img-wrapper {
+  width:400px;
+  height:200px;
+  position:absolute;
+  cursor:pointer;
+}
+
+.img-wrapper img {
+  box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+  width:inherit;
+  height:inherit;
+}
+
+.img1 {
+  top:2px;
+  left:2px;
+}
+
+.img2 {
+  top:2px;
+  left:500px;
+}
+
+.img3 {
+  top:250px;
+  left:2px;
+}
+
+.img4 {
+  top:250px;
+  left:500px;
+}
+
+/* 추가된 부분 */
+   
+/*표*/
+.tg  { 
+  border-collapse:collapse;border-color:#aaa;border-spacing:0;}
+.tg td{ 
+  background-color:#fff;border-color:#aaa;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;
+}
+.tg th{
+  background-color:#f38630;border-color:#aaa;border-style:solid;border-width:1px;color:#fff;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;
+}
+.tg .tg-4zbs{
+  background-color:#f0f0f0;color:#1f2325;font-size:26px;text-align:center;vertical-align:top
+}
+.tg .tg-v25g{
+  background-color:#ffffff;font-size:26px;font-weight:bold;text-align:center;vertical-align:middle
+}
+.tg .tg-46em{
+  background-color:#ffffff;font-size:26px;font-weight:bold;text-align:left;vertical-align:top
+}
+  
+/*표2*/
+.tg  {
+  border-collapse:collapse;border-spacing:0;
+}
+.tg td{
+  border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;
+}
+.tg th{
+  border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;
+}
+.tg .tg-ux68{
+  border-color:inherit;font-size:28px;font-weight:bold;text-align:center;vertical-align:middle
+}
+.tg .tg-nyit{
+  background-color:#f0f0f0;border-color:inherit;font-size:24px;font-weight:bold;text-align:center;vertical-align:top
+}
+.tg .tg-6ibf{
+  border-color:inherit;font-size:24px;text-align:center;vertical-align:top
+}
+
+
